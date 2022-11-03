@@ -37,7 +37,7 @@ ul {
   padding-left: 0;
 }
 
-img {
+.card {
   vertical-align: middle;
 }
 
@@ -391,7 +391,7 @@ img {
   border: 1px solid var(--card-border);
 }
 
-.projects {
+.projects-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
