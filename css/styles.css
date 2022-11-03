@@ -19,7 +19,7 @@
   --second-link-color: #757575;
   --third-link-color: #ffffff;
   --active-link-color: #2196f3;
-  --card-border: #EEEEEE;
+  --card-border: #eeeeee;
 }
 
 body {
@@ -38,7 +38,7 @@ ul {
 }
 
 img {
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .list {
@@ -53,7 +53,6 @@ img {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid turquoise;
 }
 
 .section-title {
@@ -70,6 +69,12 @@ img {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
+}
+
+.header .conteiner {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .header-navigation {
@@ -153,7 +158,6 @@ img {
   color: var(--second-link-color);
 }
 
-
 .header-link:hover,
 .header-link:focus {
   color: var(--active-link-color);
@@ -181,10 +185,17 @@ img {
   padding-top: 0;
 }
 
+.btn {
+  font-family: inherit;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
 /*---------------------HERO-----------------------*/
-.hero.section{
-padding-top: 200px;
-padding-bottom: 200px;
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero {
@@ -200,14 +211,8 @@ padding-bottom: 200px;
   color: var(--first-title-color);
   margin-bottom: 30px;
 }
-.btn {
-  display: inline-block;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
 
 .hero-btn {
-  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -215,6 +220,7 @@ padding-bottom: 200px;
   color: var(--hero-btn-text-color);
   background: var(--hero-btn-background-color);
   cursor: pointer;
+
   padding-top: 10px;
   padding-right: 32px;
   padding-bottom: 10px;
@@ -276,6 +282,13 @@ padding-bottom: 200px;
 
 .teams-item:not(:first-child) {
   margin-left: 30px;
+}
+
+.teams-item {
+  background-color: var(--main-background-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-members-name {
@@ -347,16 +360,13 @@ padding-bottom: 200px;
   justify-content: center;
 }
 
-
 .filter-btn {
-  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
   background-color: var(--btn-background-color);
   color: var(--main-btn-text-color);
-  border-radius: 4px;
   border: 0;
   cursor: pointer;
   padding-top: 6px;
@@ -376,15 +386,15 @@ padding-bottom: 200px;
   background-color: var(--active-btn-background-color);
 }
 
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap:30px
-}
-
 .project-conteiner {
   padding: 20px 24px;
   border: 1px solid var(--card-border);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .project-title {
@@ -401,4 +411,3 @@ padding-bottom: 200px;
   letter-spacing: 0.03em;
   margin-top: 4px;
 }
-
